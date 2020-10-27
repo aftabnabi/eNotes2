@@ -1,3 +1,42 @@
-p {
-  font-family: Lato;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.2fr 0.8fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Sidebarleft center center Sidebarright"
+    "Footer Footer Footer Footer";
+}
+
+.Footer {
+  grid-area: Footer;
+  border: 1px solid blanchedalmond;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: Header;
+  border: 1px solid blue;
+}
+
+.Sidebarleft {
+  grid-area: Sidebarleft;
+  border: 1px solid red;
+}
+
+.Sidebarright {
+  grid-area: Sidebarright;
+  border: 1px solid green;
+}
+
+.center {
+  grid-area: center;
+  border: 1px solid yellow;
 }
