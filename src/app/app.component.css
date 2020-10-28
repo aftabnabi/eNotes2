@@ -15,13 +15,6 @@
 }
 
 .Header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". . ."
-    ". . .";
   grid-area: Header;
   border: 1px solid blue;
 }
