@@ -1,39 +1,48 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) 1.2fr 0.8fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0px 0px;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 400px 200px 200px 100px;
+  gap: 10px 0px;
   grid-template-areas:
-    "Header Header Header Header"
-    "Sidebarleft center center Sidebarright"
-    "Footer Footer Footer Footer";
+    "Header"
+    "center"
+    "Sidebarleft"
+    "Sidebarright"
+    "Footer";
 }
 
 .Header {
   grid-area: Header;
   border: 1px solid blue;
+
+  background-color: white;
+  width: 100%;
 }
 .Header a img.logo {
-  width: 40%;
+  width: 150px;
   margin: 10px;
 }
 
 .center {
   grid-area: center;
   border: 1px solid yellow;
+  background-color: #ffe;
 }
 
 .Sidebarleft {
   grid-area: Sidebarleft;
   border: 1px solid red;
+  background-color: #ffd;
 }
 
 .Sidebarright {
   grid-area: Sidebarright;
   border: 1px solid green;
+  background-color: #ffc;
 }
 
 .Footer {
   grid-area: Footer;
   border: 1px solid blanchedalmond;
+  background-color: #ffa;
 }
