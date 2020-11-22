@@ -9,14 +9,18 @@
     "Footer Footer Footer Footer";
 }
 
-.Footer {
-  grid-area: Footer;
-  border: 1px solid blanchedalmond;
-}
-
 .Header {
   grid-area: Header;
   border: 1px solid blue;
+}
+.Header a img.logo {
+  width: 40%;
+  margin: 10px;
+}
+
+.center {
+  grid-area: center;
+  border: 1px solid yellow;
 }
 
 .Sidebarleft {
@@ -29,7 +33,7 @@
   border: 1px solid green;
 }
 
-.center {
-  grid-area: center;
-  border: 1px solid yellow;
+.Footer {
+  grid-area: Footer;
+  border: 1px solid blanchedalmond;
 }
