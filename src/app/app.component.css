@@ -10,13 +10,36 @@
     "Sidebarright"
     "Footer";
 }
-
+.show {
+  display: block;
+  transform-origin: top center;
+  animation: translateX 300ms ease-in-out forwards;
+}
+.hide {
+  display: none;
+}
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60%);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .Header {
   grid-area: Header;
   border: 1px solid blue;
 
   background-color: white;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 .Header a img.logo {
   width: 150px;
@@ -45,4 +68,28 @@
   grid-area: Footer;
   border: 1px solid blanchedalmond;
   background-color: #ffa;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+}
+ul#topmenu {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  background: #f00;
+  z-index: 10;
+  list-style: none;
+  margin: 10 auto;
+  width: 100%;
+}
+ul#topmenu li {
+  padding: 10px;
+  border-radius: 10px;
+}
+ul#topmenu li a {
+  text-decoration: none;
+  letter-spacing: 2.1px;
+  font: 500 14px/17px "san serif";
 }

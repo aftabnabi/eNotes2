@@ -7,16 +7,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   name = "Angular";
-  obj: HTMLElement;
+  isclicked: boolean = false;
+
   public constructor() {}
 
   menu(): void {
-    this.obj = document.getElementById("nav") as HTMLElement;
-
-    if (obj.style.display == "none") {
-      obj.style.display = block;
-    } else {
-      obj.style.display = none;
-    }
+    this.isclicked = !this.isclicked;
   }
 }

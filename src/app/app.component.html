@@ -3,12 +3,14 @@
 		<a href="/"><img class="logo" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.jpg"/>
     </a>
 
-			<a href="javascript:return void(0)" onclick="menu()">click</a>
-			<ul id="nav">
-				<li>Home</li>
-				<li>Contact</li>
-				<li>About Us</li>
-			</ul>
+			<a href="#" (click)="menu()">click me</a>
+			<nav [ngClass]="[isclicked ? 'show':'hide']">
+				<ul id="topmenu">
+					<li><a routerLink='/home' routerLinkActive="Active">Home</a></li>
+					<li><a routerLink='/contact' routerLinkActive="Active">Contact</a></li>
+					<li><a routerLink='/about' routerLinkActive="Active">About Us</a></li>
+				</ul>
+			</nav>
 	</div>
 	<div class="Sidebarleft">
 		<h2>Future Notes</h2>
