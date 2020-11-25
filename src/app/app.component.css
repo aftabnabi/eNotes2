@@ -69,6 +69,9 @@
   border: 1px solid blanchedalmond;
   background-color: #333;
 }
+.Footer h3 {
+  color: white;
+}
 nav.anav {
   width: 100%;
   position: absolute;
@@ -95,10 +98,14 @@ ul#topmenu li a {
 }
 nav.bnav {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
+  align-items: center;
+
+  justify-content: center;
 }
 nav.bnav ul {
   display: flex;
+
   flex-flow: column wrap;
   list-style: none;
 }
@@ -113,4 +120,8 @@ nav.bnav ul li a {
   font: 550 13px/17px "Lato";
   color: white;
   cursor: pointer;
+}
+.Footer p {
+  color: white;
+  font: 300 10px/12px "Lato";
 }
