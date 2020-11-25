@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 400px 200px 200px 100px;
+  grid-template-rows: 100px 400px 200px 200px 300px;
   gap: 10px 0px;
   grid-template-areas:
     "Header"
@@ -67,9 +67,9 @@
 .Footer {
   grid-area: Footer;
   border: 1px solid blanchedalmond;
-  background-color: #ffa;
+  background-color: #333;
 }
-nav {
+nav.anav {
   width: 100%;
   position: absolute;
   top: 100px;
@@ -92,4 +92,25 @@ ul#topmenu li a {
   text-decoration: none;
   letter-spacing: 2.1px;
   font: 500 14px/17px "san serif";
+}
+nav.bnav {
+  display: flex;
+  margin: 0 auto;
+}
+nav.bnav ul {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+}
+nav.bnav ul li {
+  list-style: none;
+  margin: 10px auto;
+}
+nav.bnav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font: 550 13px/17px "Lato";
+  color: white;
+  cursor: pointer;
 }
